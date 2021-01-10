@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,28 @@
 		1B20B27425A81B03007BB1F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B24925A81B00007BB1F7 /* ContentView.swift */; };
 		1B20B27525A81B03007BB1F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B20B24A25A81B02007BB1F7 /* Assets.xcassets */; };
 		1B20B27625A81B03007BB1F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B20B24A25A81B02007BB1F7 /* Assets.xcassets */; };
+		1B20B28A25A82AFA007BB1F7 /* memos.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B20B28925A82AF9007BB1F7 /* memos.json */; };
+		1B20B28B25A82AFA007BB1F7 /* memos.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B20B28925A82AF9007BB1F7 /* memos.json */; };
+		1B20B29625A87489007BB1F7 /* MemoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B29525A87489007BB1F7 /* MemoRow.swift */; };
+		1B20B29725A87489007BB1F7 /* MemoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B29525A87489007BB1F7 /* MemoRow.swift */; };
+		1B20B2A825A87633007BB1F7 /* MemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B2A725A87633007BB1F7 /* MemoModel.swift */; };
+		1B20B2A925A87633007BB1F7 /* MemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B2A725A87633007BB1F7 /* MemoModel.swift */; };
+		1B20B2B725A87E41007BB1F7 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B2B625A87E40007BB1F7 /* FileHelper.swift */; };
+		1B20B2B825A87E41007BB1F7 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B2B625A87E40007BB1F7 /* FileHelper.swift */; };
+		1B20B2C225A881E0007BB1F7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B2C125A881E0007BB1F7 /* Helpers.swift */; };
+		1B20B2C325A881E0007BB1F7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B2C125A881E0007BB1F7 /* Helpers.swift */; };
+		1B20B2CA25A897FA007BB1F7 /* Atributika in Frameworks */ = {isa = PBXBuildFile; productRef = 1B20B2C925A897FA007BB1F7 /* Atributika */; };
+		1B20B2D125A89F3C007BB1F7 /* SwiftRichString in Frameworks */ = {isa = PBXBuildFile; productRef = 1B20B2D025A89F3C007BB1F7 /* SwiftRichString */; };
+		1B20B2D825A8A44D007BB1F7 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 1B20B2D725A8A44D007BB1F7 /* SwiftSoup */; };
+		1B20B2DE25A98814007BB1F7 /* RichText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B2DD25A98814007BB1F7 /* RichText.swift */; };
+		1B20B2DF25A98814007BB1F7 /* RichText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B2DD25A98814007BB1F7 /* RichText.swift */; };
+		1B20B2E625AAC864007BB1F7 /* GrowingTextView in Frameworks */ = {isa = PBXBuildFile; productRef = 1B20B2E525AAC864007BB1F7 /* GrowingTextView */; };
+		1B20B2F325AADED1007BB1F7 /* transformToAttributedSting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B2F225AADED1007BB1F7 /* transformToAttributedSting.swift */; };
+		1B20B2F425AADED1007BB1F7 /* transformToAttributedSting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B2F225AADED1007BB1F7 /* transformToAttributedSting.swift */; };
+		1B20B2FB25AB213D007BB1F7 /* SourceHanMono.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 1B20B2FA25AB213D007BB1F7 /* SourceHanMono.ttc */; };
+		1B20B2FC25AB213D007BB1F7 /* SourceHanMono.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 1B20B2FA25AB213D007BB1F7 /* SourceHanMono.ttc */; };
+		1B20B30225AB2A48007BB1F7 /* MemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B30125AB2A48007BB1F7 /* MemoList.swift */; };
+		1B20B30325AB2A48007BB1F7 /* MemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B30125AB2A48007BB1F7 /* MemoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +71,15 @@
 		1B20B26A25A81B03007BB1F7 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B20B26E25A81B03007BB1F7 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		1B20B27025A81B03007BB1F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B20B28925A82AF9007BB1F7 /* memos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = memos.json; sourceTree = "<group>"; };
+		1B20B29525A87489007BB1F7 /* MemoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoRow.swift; sourceTree = "<group>"; };
+		1B20B2A725A87633007BB1F7 /* MemoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoModel.swift; sourceTree = "<group>"; };
+		1B20B2B625A87E40007BB1F7 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		1B20B2C125A881E0007BB1F7 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		1B20B2DD25A98814007BB1F7 /* RichText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichText.swift; sourceTree = "<group>"; };
+		1B20B2F225AADED1007BB1F7 /* transformToAttributedSting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transformToAttributedSting.swift; sourceTree = "<group>"; };
+		1B20B2FA25AB213D007BB1F7 /* SourceHanMono.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = SourceHanMono.ttc; sourceTree = "<group>"; };
+		1B20B30125AB2A48007BB1F7 /* MemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +87,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B20B2E625AAC864007BB1F7 /* GrowingTextView in Frameworks */,
+				1B20B2CA25A897FA007BB1F7 /* Atributika in Frameworks */,
+				1B20B2D125A89F3C007BB1F7 /* SwiftRichString in Frameworks */,
+				1B20B2D825A8A44D007BB1F7 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +121,7 @@
 		1B20B24225A81B00007BB1F7 = {
 			isa = PBXGroup;
 			children = (
+				1B20B2F925AB2126007BB1F7 /* Fonts */,
 				1B20B24725A81B00007BB1F7 /* Shared */,
 				1B20B25125A81B02007BB1F7 /* iOS */,
 				1B20B25825A81B02007BB1F7 /* macOS */,
@@ -98,6 +134,10 @@
 		1B20B24725A81B00007BB1F7 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				1B9A861D25AB2EA60070D5E2 /* Utils */,
+				1B20B2A125A8758E007BB1F7 /* Model */,
+				1B20B2A025A87574007BB1F7 /* JSON */,
+				1B20B29425A87463007BB1F7 /* View */,
 				1B20B24825A81B00007BB1F7 /* flomoApp.swift */,
 				1B20B24925A81B00007BB1F7 /* ContentView.swift */,
 				1B20B24A25A81B02007BB1F7 /* Assets.xcassets */,
@@ -151,6 +191,58 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		1B20B29425A87463007BB1F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B20B29525A87489007BB1F7 /* MemoRow.swift */,
+				1B20B30125AB2A48007BB1F7 /* MemoList.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1B20B2A025A87574007BB1F7 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				1B20B28925A82AF9007BB1F7 /* memos.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		1B20B2A125A8758E007BB1F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B20B2A225A875A8007BB1F7 /* DataModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B20B2A225A875A8007BB1F7 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				1B20B2A725A87633007BB1F7 /* MemoModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		1B20B2F925AB2126007BB1F7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1B20B2FA25AB213D007BB1F7 /* SourceHanMono.ttc */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1B9A861D25AB2EA60070D5E2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1B20B2B625A87E40007BB1F7 /* FileHelper.swift */,
+				1B20B2C125A881E0007BB1F7 /* Helpers.swift */,
+				1B20B2DD25A98814007BB1F7 /* RichText.swift */,
+				1B20B2F225AADED1007BB1F7 /* transformToAttributedSting.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,6 +259,12 @@
 			dependencies = (
 			);
 			name = "flomo (iOS)";
+			packageProductDependencies = (
+				1B20B2C925A897FA007BB1F7 /* Atributika */,
+				1B20B2D025A89F3C007BB1F7 /* SwiftRichString */,
+				1B20B2D725A8A44D007BB1F7 /* SwiftSoup */,
+				1B20B2E525AAC864007BB1F7 /* GrowingTextView */,
+			);
 			productName = "flomo (iOS)";
 			productReference = 1B20B24F25A81B02007BB1F7 /* flomo.app */;
 			productType = "com.apple.product-type.application";
@@ -258,6 +356,12 @@
 				Base,
 			);
 			mainGroup = 1B20B24225A81B00007BB1F7;
+			packageReferences = (
+				1B20B2C825A897FA007BB1F7 /* XCRemoteSwiftPackageReference "Atributika" */,
+				1B20B2CF25A89F3C007BB1F7 /* XCRemoteSwiftPackageReference "SwiftRichString" */,
+				1B20B2D625A8A44D007BB1F7 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				1B20B2E425AAC863007BB1F7 /* XCRemoteSwiftPackageReference "GrowingTextView" */,
+			);
 			productRefGroup = 1B20B25025A81B02007BB1F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -276,6 +380,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B20B27525A81B03007BB1F7 /* Assets.xcassets in Resources */,
+				1B20B2FB25AB213D007BB1F7 /* SourceHanMono.ttc in Resources */,
+				1B20B28A25A82AFA007BB1F7 /* memos.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +390,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B20B27625A81B03007BB1F7 /* Assets.xcassets in Resources */,
+				1B20B2FC25AB213D007BB1F7 /* SourceHanMono.ttc in Resources */,
+				1B20B28B25A82AFA007BB1F7 /* memos.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +417,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B20B27325A81B03007BB1F7 /* ContentView.swift in Sources */,
+				1B20B2C225A881E0007BB1F7 /* Helpers.swift in Sources */,
+				1B20B2A825A87633007BB1F7 /* MemoModel.swift in Sources */,
+				1B20B30225AB2A48007BB1F7 /* MemoList.swift in Sources */,
+				1B20B2DE25A98814007BB1F7 /* RichText.swift in Sources */,
 				1B20B27125A81B03007BB1F7 /* flomoApp.swift in Sources */,
+				1B20B29625A87489007BB1F7 /* MemoRow.swift in Sources */,
+				1B20B2B725A87E41007BB1F7 /* FileHelper.swift in Sources */,
+				1B20B2F325AADED1007BB1F7 /* transformToAttributedSting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +433,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B20B27425A81B03007BB1F7 /* ContentView.swift in Sources */,
+				1B20B2C325A881E0007BB1F7 /* Helpers.swift in Sources */,
+				1B20B2A925A87633007BB1F7 /* MemoModel.swift in Sources */,
+				1B20B30325AB2A48007BB1F7 /* MemoList.swift in Sources */,
+				1B20B2DF25A98814007BB1F7 /* RichText.swift in Sources */,
 				1B20B27225A81B03007BB1F7 /* flomoApp.swift in Sources */,
+				1B20B29725A87489007BB1F7 /* MemoRow.swift in Sources */,
+				1B20B2B825A87E41007BB1F7 /* FileHelper.swift in Sources */,
+				1B20B2F425AADED1007BB1F7 /* transformToAttributedSting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +601,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.afuture.app.flomo.flomo;
+				PRODUCT_BUNDLE_IDENTIFIER = me.afuture.app.flomo;
 				PRODUCT_NAME = flomo;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -501,7 +623,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.afuture.app.flomo.flomo;
+				PRODUCT_BUNDLE_IDENTIFIER = me.afuture.app.flomo;
 				PRODUCT_NAME = flomo;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -696,6 +818,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B20B2C825A897FA007BB1F7 /* XCRemoteSwiftPackageReference "Atributika" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/psharanda/Atributika";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.10;
+			};
+		};
+		1B20B2CF25A89F3C007BB1F7 /* XCRemoteSwiftPackageReference "SwiftRichString" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftRichString";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.7.2;
+			};
+		};
+		1B20B2D625A8A44D007BB1F7 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+		1B20B2E425AAC863007BB1F7 /* XCRemoteSwiftPackageReference "GrowingTextView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KennethTsang/GrowingTextView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B20B2C925A897FA007BB1F7 /* Atributika */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B20B2C825A897FA007BB1F7 /* XCRemoteSwiftPackageReference "Atributika" */;
+			productName = Atributika;
+		};
+		1B20B2D025A89F3C007BB1F7 /* SwiftRichString */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B20B2CF25A89F3C007BB1F7 /* XCRemoteSwiftPackageReference "SwiftRichString" */;
+			productName = SwiftRichString;
+		};
+		1B20B2D725A8A44D007BB1F7 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B20B2D625A8A44D007BB1F7 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		1B20B2E525AAC864007BB1F7 /* GrowingTextView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B20B2E425AAC863007BB1F7 /* XCRemoteSwiftPackageReference "GrowingTextView" */;
+			productName = GrowingTextView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B20B24325A81B00007BB1F7 /* Project object */;
 }
