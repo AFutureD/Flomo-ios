@@ -41,6 +41,8 @@
 		1B9A862D25ADDA210070D5E2 /* htmlRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A862B25ADDA210070D5E2 /* htmlRender.swift */; };
 		1B9A863325AEC6B40070D5E2 /* DStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A863225AEC6B40070D5E2 /* DStack.swift */; };
 		1B9A863425AEC6B40070D5E2 /* DStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A863225AEC6B40070D5E2 /* DStack.swift */; };
+		1B9A863A25AF3E5C0070D5E2 /* DemoAnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A863925AF3E5C0070D5E2 /* DemoAnyView.swift */; };
+		1B9A863B25AF3E5C0070D5E2 /* DemoAnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A863925AF3E5C0070D5E2 /* DemoAnyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,7 @@
 		1B20B30125AB2A48007BB1F7 /* MemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoList.swift; sourceTree = "<group>"; };
 		1B9A862B25ADDA210070D5E2 /* htmlRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = htmlRender.swift; sourceTree = "<group>"; };
 		1B9A863225AEC6B40070D5E2 /* DStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DStack.swift; path = Shared/View/DStack.swift; sourceTree = SOURCE_ROOT; };
+		1B9A863925AF3E5C0070D5E2 /* DemoAnyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAnyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +207,7 @@
 				1B20B29525A87489007BB1F7 /* MemoRow.swift */,
 				1B20B30125AB2A48007BB1F7 /* MemoList.swift */,
 				1B9A862B25ADDA210070D5E2 /* htmlRender.swift */,
+				1B9A863925AF3E5C0070D5E2 /* DemoAnyView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -428,6 +432,7 @@
 				1B20B2C225A881E0007BB1F7 /* Helpers.swift in Sources */,
 				1B9A862C25ADDA210070D5E2 /* htmlRender.swift in Sources */,
 				1B20B2A825A87633007BB1F7 /* MemoModel.swift in Sources */,
+				1B9A863A25AF3E5C0070D5E2 /* DemoAnyView.swift in Sources */,
 				1B20B30225AB2A48007BB1F7 /* MemoList.swift in Sources */,
 				1B20B2DE25A98814007BB1F7 /* RichText.swift in Sources */,
 				1B20B27125A81B03007BB1F7 /* flomoApp.swift in Sources */,
@@ -446,6 +451,7 @@
 				1B20B2C325A881E0007BB1F7 /* Helpers.swift in Sources */,
 				1B9A862D25ADDA210070D5E2 /* htmlRender.swift in Sources */,
 				1B20B2A925A87633007BB1F7 /* MemoModel.swift in Sources */,
+				1B9A863B25AF3E5C0070D5E2 /* DemoAnyView.swift in Sources */,
 				1B20B30325AB2A48007BB1F7 /* MemoList.swift in Sources */,
 				1B20B2DF25A98814007BB1F7 /* RichText.swift in Sources */,
 				1B20B27225A81B03007BB1F7 /* flomoApp.swift in Sources */,
