@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
         
     var body: some View {
-        MemoList()
+//        MemoList()
+        htmlRender(message: APIMemos()!.sample(id: 1).content)
     }
 }
 

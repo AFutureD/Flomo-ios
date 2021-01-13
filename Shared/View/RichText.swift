@@ -16,14 +16,14 @@ struct RichText: View {
     @State var desirHeight: CGFloat = 0.0
     
     var body: some View {
-
-        TextView(
-            text: $message,
-            attributedText: .constant(nil),
-            desiredHeight: $desirHeight
-        )
-        .frame(height: desirHeight)
-        
+        ScrollView{
+            TextView(
+                text: $message,
+                attributedText: .constant(nil)
+            )
+//            .frame(height: 500)
+            Text($message.wrappedValue)
+        }
     }
 }
 
@@ -32,66 +32,25 @@ struct TextView: UIViewRepresentable {
 
     @Binding var text: String
     @Binding var attributedText: NSAttributedString?
-    @Binding var desiredHeight: CGFloat
 
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
+    func makeUIView(context: Context) -> UILabel {
+
+        let label = UILabel()
+        label.attributedText = self.transformToAttributedSting(content: self.text)
+//        label.textAlignment = .left
+        label.numberOfLines = 0
+        label.lineBreakMode = NSLineBreakMode.byWordWrapping
+        label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        label.setContentHuggingPriority(.defaultHigh, for: .vertical)
+        return label
     }
 
-    func makeUIView(context: Context) -> UITextView {
-
-        let uiTextView = UITextView()
-        uiTextView.isScrollEnabled = true
-        uiTextView.delegate = context.coordinator
-        //let textView = UITextView()
-//        print(self.text)
-//        self.attributedText = self.transformToAttributedSting(content: self.text)
-        uiTextView.attributedText = self.transformToAttributedSting(content: self.text)
-        uiTextView.isEditable = false
-        uiTextView.backgroundColor = .clear
-//        uiTextView.isScrollEnabled = false.
-
-        return uiTextView
-    }
-
-    func updateUIView(_ uiView: UITextView, context: Context) {
-//        if self.attributedText != nil {
-//            uiView.attributedText = self.attributedText
-//        } else {
-//            uiView.text = self.text
-//            self.attributedText = transformToAttributedSting(content: self.text)
-//            uiView.attributedText = self.attributedText
-//        }
-        
-        uiView.attributedText = self.transformToAttributedSting(content: self.text)
-
-        // Compute the desired height for the content
-        let fixedWidth = uiView.frame.size.width
-        let newSize = uiView.sizeThatFits(CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude))
-
-        DispatchQueue.main.async {
-            self.desiredHeight = newSize.height
-        }
-    }
-
-    class Coordinator : NSObject, UITextViewDelegate {
-
-        var parent: TextView
-
-        init(_ view: TextView) {
-            self.parent = view
-        }
-
-        func textViewDidEndEditing(_ textView: UITextView) {
-            DispatchQueue.main.async {
-//                self.parent.text = textView.text
-                self.parent.attributedText = textView.attributedText
-            }
-        }
+    func updateUIView(_ uiView: UILabel, context: Context) {
     }
     
     func transformToAttributedSting(content: String) -> NSAttributedString{
-        print("In Render")
+//        print("In Render")
+        print(content)
         var counter = 0
         var indent = 0
         var inli = 0
@@ -174,7 +133,8 @@ struct TextView: UIViewRepresentable {
         
         return content
             .style(tags: [li,u,strongStyle], transformers: transformers)
-            .style(regex: "^#\\S+", style: hashTag)
+            .style(regex: "(?<=^|[:space:])#[[:graph:]]+", style: hashTag)
+//            .style(regex: "(?<=^|\s)#[\S\/]+", style: hashTag)
             .styleAll(all)
             .attributedString
     }
@@ -189,7 +149,7 @@ struct TextView: UIViewRepresentable {
 
 struct RichText_Previews: PreviewProvider {
     
-    @State static var message:String = APIMemos()!.sample(id: 0).content
+    @State static var message:String = APIMemos()!.sample(id: 1).content
     static var previews: some View {
         RichText(message: $message)
     }

@@ -37,6 +37,10 @@
 		1B20B2FC25AB213D007BB1F7 /* SourceHanMono.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 1B20B2FA25AB213D007BB1F7 /* SourceHanMono.ttc */; };
 		1B20B30225AB2A48007BB1F7 /* MemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B30125AB2A48007BB1F7 /* MemoList.swift */; };
 		1B20B30325AB2A48007BB1F7 /* MemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B30125AB2A48007BB1F7 /* MemoList.swift */; };
+		1B9A862C25ADDA210070D5E2 /* htmlRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A862B25ADDA210070D5E2 /* htmlRender.swift */; };
+		1B9A862D25ADDA210070D5E2 /* htmlRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A862B25ADDA210070D5E2 /* htmlRender.swift */; };
+		1B9A863325AEC6B40070D5E2 /* DStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A863225AEC6B40070D5E2 /* DStack.swift */; };
+		1B9A863425AEC6B40070D5E2 /* DStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A863225AEC6B40070D5E2 /* DStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,8 @@
 		1B20B2F225AADED1007BB1F7 /* transformToAttributedSting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transformToAttributedSting.swift; sourceTree = "<group>"; };
 		1B20B2FA25AB213D007BB1F7 /* SourceHanMono.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = SourceHanMono.ttc; sourceTree = "<group>"; };
 		1B20B30125AB2A48007BB1F7 /* MemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoList.swift; sourceTree = "<group>"; };
+		1B9A862B25ADDA210070D5E2 /* htmlRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = htmlRender.swift; sourceTree = "<group>"; };
+		1B9A863225AEC6B40070D5E2 /* DStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DStack.swift; path = Shared/View/DStack.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,8 +200,10 @@
 		1B20B29425A87463007BB1F7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1B20B2DD25A98814007BB1F7 /* RichText.swift */,
 				1B20B29525A87489007BB1F7 /* MemoRow.swift */,
 				1B20B30125AB2A48007BB1F7 /* MemoList.swift */,
+				1B9A862B25ADDA210070D5E2 /* htmlRender.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -235,9 +243,9 @@
 		1B9A861D25AB2EA60070D5E2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1B9A863225AEC6B40070D5E2 /* DStack.swift */,
 				1B20B2B625A87E40007BB1F7 /* FileHelper.swift */,
 				1B20B2C125A881E0007BB1F7 /* Helpers.swift */,
-				1B20B2DD25A98814007BB1F7 /* RichText.swift */,
 				1B20B2F225AADED1007BB1F7 /* transformToAttributedSting.swift */,
 			);
 			path = Utils;
@@ -418,6 +426,7 @@
 			files = (
 				1B20B27325A81B03007BB1F7 /* ContentView.swift in Sources */,
 				1B20B2C225A881E0007BB1F7 /* Helpers.swift in Sources */,
+				1B9A862C25ADDA210070D5E2 /* htmlRender.swift in Sources */,
 				1B20B2A825A87633007BB1F7 /* MemoModel.swift in Sources */,
 				1B20B30225AB2A48007BB1F7 /* MemoList.swift in Sources */,
 				1B20B2DE25A98814007BB1F7 /* RichText.swift in Sources */,
@@ -425,6 +434,7 @@
 				1B20B29625A87489007BB1F7 /* MemoRow.swift in Sources */,
 				1B20B2B725A87E41007BB1F7 /* FileHelper.swift in Sources */,
 				1B20B2F325AADED1007BB1F7 /* transformToAttributedSting.swift in Sources */,
+				1B9A863325AEC6B40070D5E2 /* DStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +444,7 @@
 			files = (
 				1B20B27425A81B03007BB1F7 /* ContentView.swift in Sources */,
 				1B20B2C325A881E0007BB1F7 /* Helpers.swift in Sources */,
+				1B9A862D25ADDA210070D5E2 /* htmlRender.swift in Sources */,
 				1B20B2A925A87633007BB1F7 /* MemoModel.swift in Sources */,
 				1B20B30325AB2A48007BB1F7 /* MemoList.swift in Sources */,
 				1B20B2DF25A98814007BB1F7 /* RichText.swift in Sources */,
@@ -441,6 +452,7 @@
 				1B20B29725A87489007BB1F7 /* MemoRow.swift in Sources */,
 				1B20B2B825A87E41007BB1F7 /* FileHelper.swift in Sources */,
 				1B20B2F425AADED1007BB1F7 /* transformToAttributedSting.swift in Sources */,
+				1B9A863425AEC6B40070D5E2 /* DStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

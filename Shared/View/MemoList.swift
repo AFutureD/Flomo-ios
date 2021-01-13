@@ -10,7 +10,7 @@ import SwiftUI
 struct MemoList: View {
     var body: some View {
         ScrollView {
-            LazyVStack {
+            VStack(spacing: 0) {
                 ForEach(APIMemos.getMemos()) { memo in
                     MemoRow(memo:memo)
                 }

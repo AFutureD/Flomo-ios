@@ -23,17 +23,11 @@ struct MemoRow: View {
                 .padding(.horizontal, 10)
             RichText(message: $memo.content)
                 .padding(.horizontal, 10)
+//            TextEditor(text: $memo.content)
+            
         }
         .background(Color.white)
         .cornerRadius(/*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
-//        .background(
-//            ZStack {
-//                RoundedRectangle(cornerRadius: 20)
-//                    .stroke(UIColor.red, style: StrokeStyle(lineWidth: 4))
-//
-//
-//            }
-//        )
         .padding(.horizontal, 8)
         .padding(.vertical, 10)
         .clipped()
@@ -49,6 +43,6 @@ struct MemoRow: View {
 
 struct memoLine_Previews: PreviewProvider {
     static var previews: some View {
-        MemoRow(memo: APIMemos()!.sample(id: 0))
+        MemoRow(memo: APIMemos()!.sample(id: 1))
     }
 }
