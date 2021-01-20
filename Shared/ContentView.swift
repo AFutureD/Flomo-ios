@@ -11,7 +11,9 @@ struct ContentView: View {
         
     var body: some View {
 //        MemoList()
-        htmlRender(message: APIMemos()!.sample(id: 1).content)
+//        htmlRender(message: APIMemos()!.sample(id: 1).content)
+        let store = Store()
+        SettingRootView().environmentObject(store)
     }
 }
 

@@ -22,43 +22,11 @@ struct htmlRender: View {
 
     func postOrder(_ ele: Node, _ level: Int) -> AnyView {
         
-//        if ele.nodeName() == "#text" {
-//            return AnyView(Text(try! ele.outerHtml()))
-//        }
-//        else {
-//            if ele.nodeName() == "u"{
-//                return AnyView(Text(try! ele.childNode(0).outerHtml()).underline())
-//            } else if ele.nodeName() == "p" {
-//                print(try! ele.outerHtml())
-//                let childrens = ele.getChildNodes()
-//                let subViews = childrens.map { node -> Text in
-//                    let subView = postOrder(node, level + 1)
-//                    let m = Mirror(reflecting: subView)
-//                    let mm = Mirror(reflecting: m.children.first!.value)
-//                    if let u = mm.children.first!.value as? Text {
-//                        return u
-//                    } else { return Text("")}
-//                }
-//                return AnyView(subViews.reduce(Text(""),+))
-//            } else if ele.nodeName() == "strong" {
-//                return AnyView(Text(try! ele.childNode(0).outerHtml()).bold())
-//            } else {
-//                let childrens = ele.getChildNodes()
-//
-//                return AnyView(VStack(alignment: .leading){
-//                    ForEach(0..<childrens.count){ i in
-//                        postOrder(childrens[i], level + 1)
-//                    }
-//                })
-//            }
-//        }
-        
         switch ele.nodeName() {
         case "#text":
             let content = try! ele.outerHtml()
             let texts = content.parseRichTextElements(regex: "(?<=^|[:space:])#[[:graph:]]+")
-            print(texts)
-            var textsMap = texts.map { (t,flag) -> Text in
+            let textsMap = texts.map { (t,flag) -> Text in
                 if flag {
                     return Text(t)
                         .foregroundColor(
@@ -66,15 +34,14 @@ struct htmlRender: View {
                                 red: 88/255.0, green: 131/255.0, blue: 247/255.0,
                                 alpha: 1.000)))
                 } else {
-                    return Text(t)
+                    return Text(t).font(.system(size: 15))
                 }
             }
-            return AnyView(textsMap.reduce(Text(""),+))
-//            return AnyView(Text(content))
+            return AnyView(textsMap.reduce(Text("").font(.system(size: 15)),+))
         case "u":
-            return AnyView(Text(try! ele.childNode(0).outerHtml()).underline())
+            return AnyView(Text(try! ele.childNode(0).outerHtml()).font(.system(size: 15)).underline())
         case "strong":
-            return AnyView(Text(try! ele.childNode(0).outerHtml()).bold())
+            return AnyView(Text(try! ele.childNode(0).outerHtml()).font(.system(size: 15)).bold())
         case "p":
 //            print(try! ele.outerHtml())
             let childrens = ele.getChildNodes()
@@ -84,29 +51,36 @@ struct htmlRender: View {
                 let mm = Mirror(reflecting: m.children.first!.value)
                 if let u = mm.children.first!.value as? Text {
                     return u
-                } else { return Text("")}
+                } else { return Text("").font(.system(size: 15))}
             }
-            return AnyView(subViews.reduce(Text(""),+))
+            return AnyView(subViews.reduce(Text("").font(.system(size: 15)),+))
         case "ul":
 //            print("========")
 //            print(try! ele.outerHtml())
             let childrens = ele.getChildNodes()
-
-            return AnyView(VStack(alignment: .leading){
-                ForEach(0..<childrens.count){ i in
+            if childrens.count == 1{
+                return AnyView(
                     HStack(alignment: .top){
-                        Text(" - ")
-                        postOrder(childrens[i], level + 1)
+                    Text(" - ").font(.system(size: 15))
+                    postOrder(childrens[0], level + 1)
+                })
+            } else {
+                return AnyView(VStack(alignment: .leading){
+                    ForEach(0..<childrens.count){ i in
+                        HStack(alignment: .top){
+                            Text(" - ").font(.system(size: 15))
+                            postOrder(childrens[i], level + 1)
+                        }
                     }
-                }
-            })
+                })
+            }
 //
         case "ol":
             let childrens = ele.getChildNodes()
             return AnyView(VStack(alignment: .leading){
                 ForEach(0..<childrens.count){ i in
                     HStack(alignment: .top){
-                        Text(" \(i + 1). ")
+                        Text(" \(i + 1). ").font(.system(size: 15))
                         postOrder(childrens[i], level + 1)
                     }
                 }
@@ -148,50 +122,6 @@ struct htmlRender: View {
             soup(node , level + 1)
         }
         
-    }
-}
-
-extension String {
-    
-    func parseRichTextElements(regex: String) -> [(String,Bool)] {
-        let regex = try! NSRegularExpression(pattern: regex)
-        let range = NSRange(location: 0, length: count)
-        
-        /// Find all the ranges that match the regex *CONTENT*.
-        let matches: [NSTextCheckingResult] = regex.matches(in: self, options: [], range: range)
-        let matchingRanges = matches.compactMap { Range<Int>($0.range) }
-        var elements: [(String,Bool)] = []
-        
-        let firstRange = 0..<(matchingRanges.count == 0 ? count : matchingRanges[0].lowerBound)
-        
-        if !self[firstRange].isEmpty {
-            elements.append((self[firstRange],false))
-        }
-        
-        
-        for (index, matchingRange) in matchingRanges.enumerated() {
-            let isLast = matchingRange == matchingRanges.last
-            
-            let matchContent = self[matchingRange]
-
-            elements.append((matchContent,true))
-            
-            let endLocation = isLast ? count : matchingRanges[index + 1].lowerBound
-            let range = matchingRange.upperBound..<endLocation
-
-            if !self[range].isEmpty {
-                elements.append((self[range],false))
-            }
-        }
-        
-        return elements
-    }
-    
-    /// - Returns: A string subscript based on the given range.
-    subscript(range: Range<Int>) -> String {
-        let startIndex = index(self.startIndex, offsetBy: range.lowerBound)
-        let endIndex = index(self.startIndex, offsetBy: range.upperBound)
-        return String(self[startIndex..<endIndex])
     }
 }
 

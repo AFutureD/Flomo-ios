@@ -10,14 +10,17 @@ import SwiftUI
 struct MemoList: View {
     var body: some View {
         ScrollView {
-            VStack(spacing: 0) {
+            VStack(spacing: 10) {
                 ForEach(APIMemos.getMemos()) { memo in
                     MemoRow(memo:memo)
+                        .padding(.horizontal, 10.0)
                 }
             }
         }
-        .background(Color(UIColor(red: 250/255.0, green: 250/255.0, blue: 250/255.0, alpha: 1.000)))
+        .frame(maxWidth: .infinity)
+        .background(Color(UIColor(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1.000)))
         .edgesIgnoringSafeArea(.bottom)
+        
     }
 }
 
