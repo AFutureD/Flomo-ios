@@ -68,7 +68,7 @@ class Store: ObservableObject {
         case .loadMemosDone(let result):
             switch result {
             case .success(let models):
-                appState.memoList.memos =
+                appState.memoList.memos = 
                     Dictionary(
                         uniqueKeysWithValues: models.map { ($0.id, $0) }
                     )

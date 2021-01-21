@@ -14,10 +14,10 @@ struct MainTab: View {
                 Image(systemName: "list.bullet.below.rectangle")
                 Text("Memo")
             }
-//            SettingRootView().tabItem {
-//                Image(systemName: "gear")
-//                Text("设置")
-//            }
+            SettingRootView().tabItem {
+                Image(systemName: "gear")
+                Text("设置")
+            }
         }
         .edgesIgnoringSafeArea(.top)
     }

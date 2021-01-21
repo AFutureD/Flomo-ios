@@ -45,18 +45,18 @@ struct LoginAppCommand: AppCommand {
 struct LoadPokemonsCommand: AppCommand {
     func execute(in store: Store) {
         let token = SubscriptionToken()
-//        LoadMemoRequest.all
-//            .sink(
-//                receiveCompletion: { complete in
-//                    if case .failure(let error) = complete {
-//                        store.dispatch(.loadPokemonsDone(result: .failure(error)))
-//                    }
-//                    token.unseal()
-//                }, receiveValue: { value in
-//                    store.dispatch(.loadMemoDone(result: .success(value)))
-//                }
-//            )
-//            .seal(in: token)
+        LoadMemoRequest.all
+            .sink(
+                receiveCompletion: { complete in
+                    if case .failure(let error) = complete {
+                        store.dispatch(.loadMemosDone(result: .failure(error)))
+                    }
+                    token.unseal()
+                }, receiveValue: { value in
+                    store.dispatch(.loadMemosDone(result: .success(value)))
+                }
+            )
+            .seal(in: token)
     }
 }
 

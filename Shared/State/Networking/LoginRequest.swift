@@ -55,16 +55,16 @@ struct LoginRequest {
                                             }
                                             switch loginResponse.code {
                                             case 0:
-                                                let cookies = HTTPCookie.cookies(withResponseHeaderFields: headerFields, for: URL)
-
-                                                var xsrf_token: String?
-                                                for cookie in cookies {
-                                                    if cookie.name == "XSRF-TOKEN" {
-                                                        xsrf_token = cookie.value.string
-                                                        break
-                                                    }
-                                                }
-                                                
+//                                                let cookies = HTTPCookie.cookies(withResponseHeaderFields: headerFields, for: URL)
+//
+//                                                var xsrf_token: String?
+//                                                for cookie in cookies {
+//                                                    if cookie.name == "XSRF-TOKEN" {
+//                                                        xsrf_token = cookie.value.string
+//                                                        break
+//                                                    }
+//                                                }
+                                                // TODO: User 保存 token 的方式，以便后续利用。
                                                 let user = User(email: email, token: xsrf_token!)
                                                 promise(.success(user))
 //                                            case  -1:
