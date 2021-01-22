@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct MemoList: View {
+    @EnvironmentObject var store: Store
+    
+    var memoList: AppState.MemoList { store.appState.memoList }
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 10) {
-                ForEach(APIMemos.getMemos()) { memo in
+                ForEach(memoList.allMemosByTime) { memo in
                     MemoRow(memo:memo)
                         .padding(.horizontal, 10.0)
                 }

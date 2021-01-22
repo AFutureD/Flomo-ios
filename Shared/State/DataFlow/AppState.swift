@@ -75,7 +75,7 @@ extension AppState {
             guard let memos = memos?.values else {
                 return []
             }
-            return memos.sorted{$0.created_at < $1.created_at}
+            return memos.sorted{$0.created_at > $1.created_at}
         }
     }
 }

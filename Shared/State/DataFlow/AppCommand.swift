@@ -42,10 +42,10 @@ struct LoginAppCommand: AppCommand {
     }
 }
 
-struct LoadPokemonsCommand: AppCommand {
+struct LoadMemosCommand: AppCommand {
     func execute(in store: Store) {
         let token = SubscriptionToken()
-        LoadMemoRequest.all
+        LoadMemoRequest(user: store.appState.settings.loginUser!).publisher
             .sink(
                 receiveCompletion: { complete in
                     if case .failure(let error) = complete {

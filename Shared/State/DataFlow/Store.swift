@@ -64,7 +64,7 @@ class Store: ObservableObject {
                 break
             }
             appState.memoList.loadingMemos = true
-            appCommand = LoadPokemonsCommand()
+            appCommand = LoadMemosCommand()
         case .loadMemosDone(let result):
             switch result {
             case .success(let models):

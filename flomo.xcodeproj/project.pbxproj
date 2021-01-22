@@ -45,8 +45,8 @@
 		1B9A864625B0270E0070D5E2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A864425B0270E0070D5E2 /* StringExtension.swift */; };
 		1B9A864C25B19AC60070D5E2 /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A864B25B19AC60070D5E2 /* MainTab.swift */; };
 		1B9A864D25B19AC60070D5E2 /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A864B25B19AC60070D5E2 /* MainTab.swift */; };
-		1B9A865C25B19B200070D5E2 /* MemoRootVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A865B25B19B200070D5E2 /* MemoRootVIew.swift */; };
-		1B9A865D25B19B200070D5E2 /* MemoRootVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A865B25B19B200070D5E2 /* MemoRootVIew.swift */; };
+		1B9A865C25B19B200070D5E2 /* MemoRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A865B25B19B200070D5E2 /* MemoRootView.swift */; };
+		1B9A865D25B19B200070D5E2 /* MemoRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A865B25B19B200070D5E2 /* MemoRootView.swift */; };
 		1B9A866625B19CD70070D5E2 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A866525B19CD70070D5E2 /* Store.swift */; };
 		1B9A866725B19CD70070D5E2 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A866525B19CD70070D5E2 /* Store.swift */; };
 		1B9A867125B19CE10070D5E2 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A867025B19CE10070D5E2 /* AppState.swift */; };
@@ -61,8 +61,8 @@
 		1B9A868F25B19E320070D5E2 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A868D25B19E320070D5E2 /* FileStorage.swift */; };
 		1B9A869525B19E7E0070D5E2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A869425B19E7E0070D5E2 /* User.swift */; };
 		1B9A869625B19E7E0070D5E2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A869425B19E7E0070D5E2 /* User.swift */; };
-		1B9A869F25B19F000070D5E2 /* LoadPokemonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A869C25B19F000070D5E2 /* LoadPokemonRequest.swift */; };
-		1B9A86A025B19F000070D5E2 /* LoadPokemonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A869C25B19F000070D5E2 /* LoadPokemonRequest.swift */; };
+		1B9A869F25B19F000070D5E2 /* LoadMemoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A869C25B19F000070D5E2 /* LoadMemoRequest.swift */; };
+		1B9A86A025B19F000070D5E2 /* LoadMemoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A869C25B19F000070D5E2 /* LoadMemoRequest.swift */; };
 		1B9A86A125B19F000070D5E2 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A869D25B19F000070D5E2 /* LoginRequest.swift */; };
 		1B9A86A225B19F000070D5E2 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A869D25B19F000070D5E2 /* LoginRequest.swift */; };
 		1B9A86A325B19F000070D5E2 /* EmailCheckingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A869E25B19F000070D5E2 /* EmailCheckingRequest.swift */; };
@@ -125,7 +125,7 @@
 		1B9A863225AEC6B40070D5E2 /* DStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DStack.swift; path = Shared/View/DStack.swift; sourceTree = SOURCE_ROOT; };
 		1B9A864425B0270E0070D5E2 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		1B9A864B25B19AC60070D5E2 /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
-		1B9A865B25B19B200070D5E2 /* MemoRootVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoRootVIew.swift; sourceTree = "<group>"; };
+		1B9A865B25B19B200070D5E2 /* MemoRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoRootView.swift; sourceTree = "<group>"; };
 		1B9A866525B19CD70070D5E2 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		1B9A867025B19CE10070D5E2 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		1B9A867725B19CF30070D5E2 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		1B9A868525B19D060070D5E2 /* AppCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommand.swift; sourceTree = "<group>"; };
 		1B9A868D25B19E320070D5E2 /* FileStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
 		1B9A869425B19E7E0070D5E2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		1B9A869C25B19F000070D5E2 /* LoadPokemonRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadPokemonRequest.swift; sourceTree = "<group>"; };
+		1B9A869C25B19F000070D5E2 /* LoadMemoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMemoRequest.swift; sourceTree = "<group>"; };
 		1B9A869D25B19F000070D5E2 /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		1B9A869E25B19F000070D5E2 /* EmailCheckingRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailCheckingRequest.swift; sourceTree = "<group>"; };
 		1B9A86AA25B1CB050070D5E2 /* SettingRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingRootView.swift; sourceTree = "<group>"; };
@@ -317,7 +317,7 @@
 			children = (
 				1B20B29525A87489007BB1F7 /* MemoRow.swift */,
 				1B20B30125AB2A48007BB1F7 /* MemoList.swift */,
-				1B9A865B25B19B200070D5E2 /* MemoRootVIew.swift */,
+				1B9A865B25B19B200070D5E2 /* MemoRootView.swift */,
 			);
 			path = Memo;
 			sourceTree = "<group>";
@@ -358,7 +358,7 @@
 				1B9A86C225B2D7480070D5E2 /* NetworkAPI.swift */,
 				1B9A86C125B2D7480070D5E2 /* NetworkManager.swift */,
 				1B9A869E25B19F000070D5E2 /* EmailCheckingRequest.swift */,
-				1B9A869C25B19F000070D5E2 /* LoadPokemonRequest.swift */,
+				1B9A869C25B19F000070D5E2 /* LoadMemoRequest.swift */,
 				1B9A869D25B19F000070D5E2 /* LoginRequest.swift */,
 			);
 			path = Networking;
@@ -549,7 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B9A869F25B19F000070D5E2 /* LoadPokemonRequest.swift in Sources */,
+				1B9A869F25B19F000070D5E2 /* LoadMemoRequest.swift in Sources */,
 				1B20B27325A81B03007BB1F7 /* ContentView.swift in Sources */,
 				1B20B2C225A881E0007BB1F7 /* Helpers.swift in Sources */,
 				1B9A867F25B19CFC0070D5E2 /* AppError.swift in Sources */,
@@ -566,7 +566,7 @@
 				1B20B27125A81B03007BB1F7 /* flomoApp.swift in Sources */,
 				1B9A86A125B19F000070D5E2 /* LoginRequest.swift in Sources */,
 				1B20B29625A87489007BB1F7 /* MemoRow.swift in Sources */,
-				1B9A865C25B19B200070D5E2 /* MemoRootVIew.swift in Sources */,
+				1B9A865C25B19B200070D5E2 /* MemoRootView.swift in Sources */,
 				1B9A867825B19CF30070D5E2 /* AppAction.swift in Sources */,
 				1B9A86A325B19F000070D5E2 /* EmailCheckingRequest.swift in Sources */,
 				1B20B2B725A87E41007BB1F7 /* FileHelper.swift in Sources */,
@@ -585,7 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B9A86A025B19F000070D5E2 /* LoadPokemonRequest.swift in Sources */,
+				1B9A86A025B19F000070D5E2 /* LoadMemoRequest.swift in Sources */,
 				1B20B27425A81B03007BB1F7 /* ContentView.swift in Sources */,
 				1B20B2C325A881E0007BB1F7 /* Helpers.swift in Sources */,
 				1B9A868025B19CFC0070D5E2 /* AppError.swift in Sources */,
@@ -602,7 +602,7 @@
 				1B20B27225A81B03007BB1F7 /* flomoApp.swift in Sources */,
 				1B9A86A225B19F000070D5E2 /* LoginRequest.swift in Sources */,
 				1B20B29725A87489007BB1F7 /* MemoRow.swift in Sources */,
-				1B9A865D25B19B200070D5E2 /* MemoRootVIew.swift in Sources */,
+				1B9A865D25B19B200070D5E2 /* MemoRootView.swift in Sources */,
 				1B9A867925B19CF30070D5E2 /* AppAction.swift in Sources */,
 				1B9A86A425B19F000070D5E2 /* EmailCheckingRequest.swift in Sources */,
 				1B20B2B825A87E41007BB1F7 /* FileHelper.swift in Sources */,

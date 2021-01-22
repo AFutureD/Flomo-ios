@@ -12,8 +12,10 @@ struct ContentView: View {
     var body: some View {
 //        MemoList()
 //        htmlRender(message: APIMemos()!.sample(id: 1).content)
+        
+        // TODO: show mainTab in app, and transfer PokeMaster's example to this project.
         let store = Store()
-        SettingRootView().environmentObject(store)
+        MainTab().environmentObject(store)
     }
 }
 

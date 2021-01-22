@@ -26,9 +26,9 @@ struct MemoRow: View {
 //                .padding(.horizontal, 10)
 //            GeometryReader { geo in
             htmlRender(message: memo.content)
-//                    .frame(minWidth: 0, maxWidth: .infinity,alignment: .leading)
-//                    .padding(.horizontal, 15)
-//                    .padding(.bottom, 15)
+                    .frame(minWidth: 0, maxWidth: .infinity,alignment: .leading)
+                    .padding(.horizontal, 15)
+                    .padding(.bottom, 15)
                     
 //            }
 //            TextEditor(text: $memo.content)

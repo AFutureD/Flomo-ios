@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MemoRootVIew: View {
+struct MemoRootView: View {
     @EnvironmentObject var store: Store
     
     var body: some View {
@@ -18,14 +18,15 @@ struct MemoRootVIew: View {
                 }
             } else {
                 MemoList()
-                    .navigationBarTitle("宝可梦列表")
+                    .navigationBarTitle("Memo")
             }
         }
     }
 }
 
-struct MemoRootVIew_Previews: PreviewProvider {
+struct MemoRootView_Previews: PreviewProvider {
     static var previews: some View {
-        MemoRootVIew()
+        let store = Store()
+        MemoRootView().environmentObject(store)
     }
 }

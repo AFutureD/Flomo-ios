@@ -20,19 +20,23 @@ extension Memo: Identifiable {
 
 
 struct APIMemos: Codable {
+    let code: Int
+    let message: String
     let memos: [Memo]
 }
 
 extension APIMemos {
-    static func getMemos() -> [Memo] {
+    static func getMemos() -> APIMemos {
         let bundlePath = Bundle.main.path(forResource: "memos", ofType: "json")
         let jsonData = try! String(contentsOfFile: bundlePath!).data(using: .utf8)
         let decodedData = try! JSONDecoder().decode(APIMemos.self, from: jsonData!)
 
-        return decodedData.memos
+        return decodedData
     }
     init? () {
-        memos = APIMemos.getMemos()
+        code = APIMemos.getMemos().code
+        message = APIMemos.getMemos().message
+        memos = APIMemos.getMemos().memos
     }
     
     func sample(id: Int) -> Memo {
