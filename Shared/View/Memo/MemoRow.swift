@@ -18,8 +18,8 @@ struct MemoRow: View {
             Text(memo.created_at)
                 .font(.subheadline)
                 .foregroundColor(.gray)
-                .padding(.top, 15)
-                .padding(.horizontal, 15)
+//                .padding(.top, 15)
+//                .padding(.horizontal, 15)
                 .padding(.bottom, 5)
                 .lineLimit(0)
 //            RichText(message: $memo.content)
@@ -27,17 +27,17 @@ struct MemoRow: View {
 //            GeometryReader { geo in
             htmlRender(message: memo.content)
                     .frame(minWidth: 0, maxWidth: .infinity,alignment: .leading)
-                    .padding(.horizontal, 15)
-                    .padding(.bottom, 15)
+//                    .padding(.horizontal, 15)
+//                    .padding(.bottom, 15)
                     
 //            }
 //            TextEditor(text: $memo.content)
             
         }
         .background(Color.white)
-        .cornerRadius(15)
+//        .cornerRadius(15)
 //        .padding(.horizontal, 8)
-//        .padding(.vertical, 10)
+        .padding(.vertical, 10)
 //        .shadow(radius: 2 )
         
         

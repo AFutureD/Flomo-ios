@@ -16,6 +16,7 @@ enum AppError: Error, Identifiable {
     case forbiden
     case parseDataToJSONFailed
     case fetchFailed(String)
+    case noUserInfo
 }
 
 extension AppError: LocalizedError {
@@ -27,6 +28,7 @@ extension AppError: LocalizedError {
         case .forbiden: return "被服务器限制"
         case .parseDataToJSONFailed: return "转换 JSON 数据失败"
         case .fetchFailed(let message): return message
+        case .noUserInfo: return "无用户信息"
         }
         
     }

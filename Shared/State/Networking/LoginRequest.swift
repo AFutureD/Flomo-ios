@@ -16,7 +16,7 @@ struct LoginRequest {
 
     var publisher: AnyPublisher<User, AppError> {
         Future { promise in
-            let parameters = [ "email": "afuture0@outlook.com", "password": "Dhn78834" ]
+            let parameters = [ "email": email, "password": password ]
             AF.request("https://flomoapp.com/login/", method: .get)
                 .responseData { response in
                     switch response.result {

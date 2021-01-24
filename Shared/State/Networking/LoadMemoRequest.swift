@@ -11,7 +11,7 @@ import Combine
 import Alamofire
 
 struct LoadMemoRequest {
-    let user: User
+    let user: User?
     
 //    var all: AnyPublisher<[Memo], AppError> {
 //        LoadMemoRequest().publisher
@@ -32,9 +32,13 @@ struct LoadMemoRequest {
 //            .decode(type: APIMemos.self, decoder: appDecoder)
 //            .eraseToAnyPublisher()
         Future { promise in
+            if user == nil {
+                promise(.failure(.noUserInfo))
+                return
+            }
             var headers: HTTPHeaders = [
             // TODO: pass x-xsrf-token to api.
-                "X-XSRF-TOKEN": user.token
+                "X-XSRF-TOKEN": user!.token
             ]
             AF.request("https://flomo.app/api/memo",method: .get,headers: headers)
                 .validate(statusCode: 200..<300)

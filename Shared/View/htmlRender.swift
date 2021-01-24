@@ -29,6 +29,7 @@ struct htmlRender: View {
             let textsMap = texts.map { (t,flag) -> Text in
                 if flag {
                     return Text(t)
+                        .font(.system(size: 15))
                         .foregroundColor(
                             Color(UIColor(
                                 red: 88/255.0, green: 131/255.0, blue: 247/255.0,
@@ -66,7 +67,7 @@ struct htmlRender: View {
                 })
             } else {
                 return AnyView(VStack(alignment: .leading){
-                    ForEach(0..<childrens.count){ i in
+                    ForEach(0..<childrens.count, id: \.self){ i in
                         HStack(alignment: .top){
                             Text(" - ").font(.system(size: 15))
                             postOrder(childrens[i], level + 1)
@@ -78,7 +79,7 @@ struct htmlRender: View {
         case "ol":
             let childrens = ele.getChildNodes()
             return AnyView(VStack(alignment: .leading){
-                ForEach(0..<childrens.count){ i in
+                ForEach(0..<childrens.count, id: \.self){ i in
                     HStack(alignment: .top){
                         Text(" \(i + 1). ").font(.system(size: 15))
                         postOrder(childrens[i], level + 1)
@@ -98,16 +99,21 @@ struct htmlRender: View {
                 } else { return subView}
             }
             return AnyView(VStack(alignment: .leading){
-                ForEach(0..<subViews.count){ i in
+                ForEach(0..<subViews.count, id: \.self){ i in
                     subViews[i]
                 }
             })
         default:
             let childrens = ele.getChildNodes()
+//            print("Count: \(childrens.count)")
 
             return AnyView(VStack(alignment: .leading){
-                ForEach(0..<childrens.count){ i in
-                    postOrder(childrens[i], level + 1)
+//                print("Count: \(childrens.count)")
+                ForEach(0..<childrens.count, id: \.self){ i in
+//                    print("index: \(i)")
+                    if i < childrens.count {
+                        postOrder(childrens[i], level + 1)
+                    }
                 }
             })
         }

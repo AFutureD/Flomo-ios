@@ -13,7 +13,7 @@ struct ContentView: View {
 //        MemoList()
 //        htmlRender(message: APIMemos()!.sample(id: 1).content)
         
-        // TODO: show mainTab in app, and transfer PokeMaster's example to this project.
+        // DONE: show mainTab in app, and transfer PokeMaster's example to this project.
         let store = Store()
         MainTab().environmentObject(store)
     }
