@@ -22,16 +22,17 @@ struct MemoRow: View {
 //                .padding(.horizontal, 15)
                 .padding(.bottom, 5)
                 .lineLimit(0)
+            
+            // Use TextEditor from UIkit to render attribuitedText
 //            RichText(message: $memo.content)
 //                .padding(.horizontal, 10)
-//            GeometryReader { geo in
+            
+            // Use Text from swiftUI to render text.
             htmlRender(message: memo.content)
                     .frame(minWidth: 0, maxWidth: .infinity,alignment: .leading)
 //                    .padding(.horizontal, 15)
 //                    .padding(.bottom, 15)
                     
-//            }
-//            TextEditor(text: $memo.content)
             
         }
         .background(Color.white)

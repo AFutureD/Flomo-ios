@@ -25,6 +25,10 @@ struct MainTab: View {
 
 struct MainTab_Previews: PreviewProvider {
     static var previews: some View {
-        MainTab()
+        let store = Store()
+        store.appState.memoList.memos = Dictionary(
+            uniqueKeysWithValues: APIMemos.getMemos().memos.map { ($0.id, $0) }
+        )
+        return MainTab().environmentObject(store)
     }
 }

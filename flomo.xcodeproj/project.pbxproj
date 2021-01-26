@@ -37,6 +37,8 @@
 		1B20B2FC25AB213D007BB1F7 /* SourceHanMono.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 1B20B2FA25AB213D007BB1F7 /* SourceHanMono.ttc */; };
 		1B20B30225AB2A48007BB1F7 /* MemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B30125AB2A48007BB1F7 /* MemoList.swift */; };
 		1B20B30325AB2A48007BB1F7 /* MemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B30125AB2A48007BB1F7 /* MemoList.swift */; };
+		1B2FC40C25C063450087018C /* NewMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2FC40B25C063450087018C /* NewMemoView.swift */; };
+		1B2FC40D25C063450087018C /* NewMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2FC40B25C063450087018C /* NewMemoView.swift */; };
 		1B9A862C25ADDA210070D5E2 /* htmlRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A862B25ADDA210070D5E2 /* htmlRender.swift */; };
 		1B9A862D25ADDA210070D5E2 /* htmlRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A862B25ADDA210070D5E2 /* htmlRender.swift */; };
 		1B9A863325AEC6B40070D5E2 /* DStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9A863225AEC6B40070D5E2 /* DStack.swift */; };
@@ -121,6 +123,7 @@
 		1B20B2F225AADED1007BB1F7 /* transformToAttributedSting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transformToAttributedSting.swift; sourceTree = "<group>"; };
 		1B20B2FA25AB213D007BB1F7 /* SourceHanMono.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = SourceHanMono.ttc; sourceTree = "<group>"; };
 		1B20B30125AB2A48007BB1F7 /* MemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoList.swift; sourceTree = "<group>"; };
+		1B2FC40B25C063450087018C /* NewMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMemoView.swift; sourceTree = "<group>"; };
 		1B9A862B25ADDA210070D5E2 /* htmlRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = htmlRender.swift; sourceTree = "<group>"; };
 		1B9A863225AEC6B40070D5E2 /* DStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DStack.swift; path = Shared/View/DStack.swift; sourceTree = SOURCE_ROOT; };
 		1B9A864425B0270E0070D5E2 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -318,6 +321,7 @@
 				1B20B29525A87489007BB1F7 /* MemoRow.swift */,
 				1B20B30125AB2A48007BB1F7 /* MemoList.swift */,
 				1B9A865B25B19B200070D5E2 /* MemoRootView.swift */,
+				1B2FC40B25C063450087018C /* NewMemoView.swift */,
 			);
 			path = Memo;
 			sourceTree = "<group>";
@@ -574,6 +578,7 @@
 				1B20B2F325AADED1007BB1F7 /* transformToAttributedSting.swift in Sources */,
 				1B9A864525B0270E0070D5E2 /* StringExtension.swift in Sources */,
 				1B9A86C325B2D7480070D5E2 /* NetworkManager.swift in Sources */,
+				1B2FC40C25C063450087018C /* NewMemoView.swift in Sources */,
 				1B9A86AC25B1CB050070D5E2 /* SettingRootView.swift in Sources */,
 				1B9A863325AEC6B40070D5E2 /* DStack.swift in Sources */,
 				1B9A868625B19D060070D5E2 /* AppCommand.swift in Sources */,
@@ -610,6 +615,7 @@
 				1B20B2F425AADED1007BB1F7 /* transformToAttributedSting.swift in Sources */,
 				1B9A864625B0270E0070D5E2 /* StringExtension.swift in Sources */,
 				1B9A86C425B2D7480070D5E2 /* NetworkManager.swift in Sources */,
+				1B2FC40D25C063450087018C /* NewMemoView.swift in Sources */,
 				1B9A86AD25B1CB050070D5E2 /* SettingRootView.swift in Sources */,
 				1B9A863425AEC6B40070D5E2 /* DStack.swift in Sources */,
 				1B9A868725B19D060070D5E2 /* AppCommand.swift in Sources */,

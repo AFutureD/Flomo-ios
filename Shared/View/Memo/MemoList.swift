@@ -27,9 +27,7 @@ struct MemoList: View {
         
         VStack() {
             List(0..<memoList.count){ i in
-//                ForEach(memoList.allMemosByTime) { memo in
                     MemoRow(memo:memoList[i])
-//                        .padding(.horizontal, 10.0)
 //                }
             }
             .listStyle(PlainListStyle())

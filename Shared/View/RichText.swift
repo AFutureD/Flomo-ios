@@ -22,7 +22,7 @@ struct RichText: View {
                 attributedText: .constant(nil)
             )
 //            .frame(height: 500)
-            Text($message.wrappedValue)
+//            Text($message.wrappedValue)
         }
     }
 }

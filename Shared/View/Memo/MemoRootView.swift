@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MemoRootView: View {
     @EnvironmentObject var store: Store
+    @State var isPresentingModal: Bool = false
     
     var body: some View {
         NavigationView {
@@ -19,13 +20,27 @@ struct MemoRootView: View {
             } else {
                 MemoList()
                     .navigationTitle("Memo")
-//                    .padding(0.001)
-//                    .navigationBarHidden(true)
+                    .navigationBarItems(trailing: addMemoButton)
+                    .sheet(isPresented: $isPresentingModal) {
+                        NewMemoView()
+                    }
             }
         }
-//        .navigationTitle("Memo")
+    }
+    
+    var addMemoButton: some View{
+        Button(action: {
+            // 实现 add memo view. 参考 https://github.com/bpisano/Weather/blob/master/Weather/Views/List/CityListView.swift
+            self.isPresentingModal = true
+        }) {
+            Image(systemName: "square.and.pencil").imageScale(.large)
+        }
+//        .sheet(isPresented: $isPresentingModal) {
+//            NewMemoView()
+//        }
     }
 }
+
 
 struct MemoRootView_Previews: PreviewProvider {
     static var previews: some View {
