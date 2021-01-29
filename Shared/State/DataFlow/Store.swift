@@ -64,6 +64,7 @@ class Store: ObservableObject {
                 break
             }
             appState.memoList.loadingMemos = true
+            print("loadingMemos true")
             appCommand = LoadMemosCommand()
         case .loadMemosDone(let result):
             switch result {
@@ -72,8 +73,12 @@ class Store: ObservableObject {
                     Dictionary(
                         uniqueKeysWithValues: models.map { ($0.id, $0) }
                     )
+                appState.memoList.loadingMemos = false
+                print("loadingMemos false")
             case .failure(let error):
                 print(error)
+                appState.memoList.loadingMemos = false
+                print("loadingMemos false")
             }
         }
 

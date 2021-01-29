@@ -6,11 +6,16 @@
 //
 
 import SwiftUI
+import SwiftUIRefresh
 
 struct MemoList: View {
     @EnvironmentObject var store: Store
+//    var isShowing: Bool {
+//        store.appState.memoList.loadingMemos
+//    }
+    @State var isShowing: Bool = false
     
-    var memoList: [Memo] { store.appState.memoList.allMemosByTime }
+//    @Binding var memoList: [Memo] =  $store.appState.memoList.allMemosByTime
     
     var body: some View {
 //        ScrollView {
@@ -26,11 +31,25 @@ struct MemoList: View {
 //        .edgesIgnoringSafeArea(.bottom)
         
         VStack() {
-            List(0..<memoList.count){ i in
-                    MemoRow(memo:memoList[i])
-//                }
+//            List(0..<memoList.count){ i in
+//                    MemoRow(memo:memoList[i])
+////                }
+//            }
+            List(store.appState.memoList.allMemosByTime, id: \.self){ memo in
+                MemoRow(memo:memo)
             }
             .listStyle(PlainListStyle())
+            .pullToRefresh(isShowing: $isShowing) {
+                print(store.appState.memoList.loadingMemos)
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    self.store.dispatch(.loadMemos)
+                    self.isShowing = false
+                    print("REFRESH")
+                }
+            }
+            .onChange(of: store.appState.memoList.loadingMemos) { value in
+            }
             
 //            .listStyle(GroupedListStyle())
 //            .navigationBarHidden(true)

@@ -14,8 +14,12 @@ struct Memo: Codable {
     
 }
 
-extension Memo: Identifiable {
+extension Memo: Identifiable, Hashable {
     var id: String { return slug }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(slug)
+    }
 }
 
 
