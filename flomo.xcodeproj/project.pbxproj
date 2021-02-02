@@ -37,6 +37,38 @@
 		1B20B2FC25AB213D007BB1F7 /* SourceHanMono.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 1B20B2FA25AB213D007BB1F7 /* SourceHanMono.ttc */; };
 		1B20B30225AB2A48007BB1F7 /* MemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B30125AB2A48007BB1F7 /* MemoList.swift */; };
 		1B20B30325AB2A48007BB1F7 /* MemoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B20B30125AB2A48007BB1F7 /* MemoList.swift */; };
+		1B2CF3C325C8556000B2BA3D /* TwitterTextEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 1B2CF3C225C8556000B2BA3D /* TwitterTextEditor */; };
+		1B2CF3C425C8556000B2BA3D /* TwitterTextEditor in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 1B2CF3C225C8556000B2BA3D /* TwitterTextEditor */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1B2CF42325C86F9400B2BA3D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF40C25C86F9300B2BA3D /* UIColor+Extension.swift */; };
+		1B2CF42425C86F9400B2BA3D /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF40E25C86F9300B2BA3D /* UIView+Layout.swift */; };
+		1B2CF42525C86F9400B2BA3D /* NotesFontProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF41025C86F9400B2BA3D /* NotesFontProvider.swift */; };
+		1B2CF42625C86F9400B2BA3D /* UIFont+withBoldWithoutItalics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF41125C86F9400B2BA3D /* UIFont+withBoldWithoutItalics.swift */; };
+		1B2CF42725C86F9400B2BA3D /* NotesTextView+TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF41325C86F9400B2BA3D /* NotesTextView+TextStyle.swift */; };
+		1B2CF42825C86F9400B2BA3D /* NotesTextView+TextFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF41425C86F9400B2BA3D /* NotesTextView+TextFormat.swift */; };
+		1B2CF42925C86F9400B2BA3D /* NotesTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF41525C86F9400B2BA3D /* NotesTextView.swift */; };
+		1B2CF42A25C86F9400B2BA3D /* NotesTextView+Indents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF41625C86F9400B2BA3D /* NotesTextView+Indents.swift */; };
+		1B2CF42B25C86F9400B2BA3D /* NotesTextView+TextStyleKeyboardViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF41725C86F9400B2BA3D /* NotesTextView+TextStyleKeyboardViewDelegate.swift */; };
+		1B2CF42C25C86F9400B2BA3D /* NotesTextView+KeyboardManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF41825C86F9400B2BA3D /* NotesTextView+KeyboardManagement.swift */; };
+		1B2CF42D25C86F9400B2BA3D /* NotesTextView+UndoManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF41925C86F9400B2BA3D /* NotesTextView+UndoManagement.swift */; };
+		1B2CF42E25C86F9400B2BA3D /* NotesTextView+TextAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF41A25C86F9400B2BA3D /* NotesTextView+TextAlignment.swift */; };
+		1B2CF42F25C86F9400B2BA3D /* TwoStateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF41C25C86F9400B2BA3D /* TwoStateButton.swift */; };
+		1B2CF43025C86F9400B2BA3D /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF41D25C86F9400B2BA3D /* ColorPickerView.swift */; };
+		1B2CF43125C86F9400B2BA3D /* TextStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF41E25C86F9400B2BA3D /* TextStyleView.swift */; };
+		1B2CF43225C86F9400B2BA3D /* TransformedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF41F25C86F9400B2BA3D /* TransformedColor.swift */; };
+		1B2CF43325C86F9400B2BA3D /* TextStyleKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF42025C86F9400B2BA3D /* TextStyleKeyboardView.swift */; };
+		1B2CF43425C86F9400B2BA3D /* ColorChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF42125C86F9400B2BA3D /* ColorChoiceView.swift */; };
+		1B2CF43525C86F9400B2BA3D /* OneStateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF42225C86F9400B2BA3D /* OneStateButton.swift */; };
+		1B2CF44A25C9306A00B2BA3D /* Proton in Frameworks */ = {isa = PBXBuildFile; productRef = 1B2CF44925C9306A00B2BA3D /* Proton */; };
+		1B2CF44F25C9309300B2BA3D /* MemoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF44E25C9309300B2BA3D /* MemoEditorView.swift */; };
+		1B2CF48D25C99D8C00B2BA3D /* TextBlockCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF48725C99D8C00B2BA3D /* TextBlockCommand.swift */; };
+		1B2CF48E25C99D8C00B2BA3D /* PanelCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF48825C99D8C00B2BA3D /* PanelCommand.swift */; };
+		1B2CF48F25C99D8C00B2BA3D /* EncodeContentsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF48925C99D8C00B2BA3D /* EncodeContentsCommand.swift */; };
+		1B2CF49025C99D8C00B2BA3D /* DummyCollabCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF48A25C99D8C00B2BA3D /* DummyCollabCommand.swift */; };
+		1B2CF49125C99D8C00B2BA3D /* ResetCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF48B25C99D8C00B2BA3D /* ResetCommand.swift */; };
+		1B2CF49225C99D8C00B2BA3D /* ScrollCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF48C25C99D8C00B2BA3D /* ScrollCommand.swift */; };
+		1B2CF49825C99EAB00B2BA3D /* BoldCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF49625C99EAB00B2BA3D /* BoldCommand.swift */; };
+		1B2CF49925C99EAB00B2BA3D /* ItalicsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF49725C99EAB00B2BA3D /* ItalicsCommand.swift */; };
+		1B2CF49E25C99EC400B2BA3D /* FontTraitToggleCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2CF49D25C99EC400B2BA3D /* FontTraitToggleCommand.swift */; };
 		1B2FC40C25C063450087018C /* NewMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2FC40B25C063450087018C /* NewMemoView.swift */; };
 		1B2FC40D25C063450087018C /* NewMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2FC40B25C063450087018C /* NewMemoView.swift */; };
 		1B2FC41725C1BCF20087018C /* AttributedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2FC41625C1BCF20087018C /* AttributedText.swift */; };
@@ -103,6 +135,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1B2CF3BA25C854E600B2BA3D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1B2CF3C425C8556000B2BA3D /* TwitterTextEditor in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1B20B24825A81B00007BB1F7 /* flomoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flomoApp.swift; sourceTree = "<group>"; };
 		1B20B24925A81B00007BB1F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -127,6 +173,35 @@
 		1B20B2F225AADED1007BB1F7 /* transformToAttributedSting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transformToAttributedSting.swift; sourceTree = "<group>"; };
 		1B20B2FA25AB213D007BB1F7 /* SourceHanMono.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = SourceHanMono.ttc; sourceTree = "<group>"; };
 		1B20B30125AB2A48007BB1F7 /* MemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoList.swift; sourceTree = "<group>"; };
+		1B2CF40C25C86F9300B2BA3D /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		1B2CF40E25C86F9300B2BA3D /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		1B2CF41025C86F9400B2BA3D /* NotesFontProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesFontProvider.swift; sourceTree = "<group>"; };
+		1B2CF41125C86F9400B2BA3D /* UIFont+withBoldWithoutItalics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+withBoldWithoutItalics.swift"; sourceTree = "<group>"; };
+		1B2CF41325C86F9400B2BA3D /* NotesTextView+TextStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotesTextView+TextStyle.swift"; sourceTree = "<group>"; };
+		1B2CF41425C86F9400B2BA3D /* NotesTextView+TextFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotesTextView+TextFormat.swift"; sourceTree = "<group>"; };
+		1B2CF41525C86F9400B2BA3D /* NotesTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesTextView.swift; sourceTree = "<group>"; };
+		1B2CF41625C86F9400B2BA3D /* NotesTextView+Indents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotesTextView+Indents.swift"; sourceTree = "<group>"; };
+		1B2CF41725C86F9400B2BA3D /* NotesTextView+TextStyleKeyboardViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotesTextView+TextStyleKeyboardViewDelegate.swift"; sourceTree = "<group>"; };
+		1B2CF41825C86F9400B2BA3D /* NotesTextView+KeyboardManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotesTextView+KeyboardManagement.swift"; sourceTree = "<group>"; };
+		1B2CF41925C86F9400B2BA3D /* NotesTextView+UndoManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotesTextView+UndoManagement.swift"; sourceTree = "<group>"; };
+		1B2CF41A25C86F9400B2BA3D /* NotesTextView+TextAlignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotesTextView+TextAlignment.swift"; sourceTree = "<group>"; };
+		1B2CF41C25C86F9400B2BA3D /* TwoStateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoStateButton.swift; sourceTree = "<group>"; };
+		1B2CF41D25C86F9400B2BA3D /* ColorPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		1B2CF41E25C86F9400B2BA3D /* TextStyleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStyleView.swift; sourceTree = "<group>"; };
+		1B2CF41F25C86F9400B2BA3D /* TransformedColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformedColor.swift; sourceTree = "<group>"; };
+		1B2CF42025C86F9400B2BA3D /* TextStyleKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextStyleKeyboardView.swift; sourceTree = "<group>"; };
+		1B2CF42125C86F9400B2BA3D /* ColorChoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorChoiceView.swift; sourceTree = "<group>"; };
+		1B2CF42225C86F9400B2BA3D /* OneStateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneStateButton.swift; sourceTree = "<group>"; };
+		1B2CF44E25C9309300B2BA3D /* MemoEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoEditorView.swift; sourceTree = "<group>"; };
+		1B2CF48725C99D8C00B2BA3D /* TextBlockCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextBlockCommand.swift; sourceTree = "<group>"; };
+		1B2CF48825C99D8C00B2BA3D /* PanelCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanelCommand.swift; sourceTree = "<group>"; };
+		1B2CF48925C99D8C00B2BA3D /* EncodeContentsCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodeContentsCommand.swift; sourceTree = "<group>"; };
+		1B2CF48A25C99D8C00B2BA3D /* DummyCollabCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyCollabCommand.swift; sourceTree = "<group>"; };
+		1B2CF48B25C99D8C00B2BA3D /* ResetCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetCommand.swift; sourceTree = "<group>"; };
+		1B2CF48C25C99D8C00B2BA3D /* ScrollCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollCommand.swift; sourceTree = "<group>"; };
+		1B2CF49625C99EAB00B2BA3D /* BoldCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoldCommand.swift; sourceTree = "<group>"; };
+		1B2CF49725C99EAB00B2BA3D /* ItalicsCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItalicsCommand.swift; sourceTree = "<group>"; };
+		1B2CF49D25C99EC400B2BA3D /* FontTraitToggleCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontTraitToggleCommand.swift; sourceTree = "<group>"; };
 		1B2FC40B25C063450087018C /* NewMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMemoView.swift; sourceTree = "<group>"; };
 		1B2FC41625C1BCF20087018C /* AttributedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedText.swift; sourceTree = "<group>"; };
 		1B9A862B25ADDA210070D5E2 /* htmlRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = htmlRender.swift; sourceTree = "<group>"; };
@@ -156,9 +231,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B2CF3C325C8556000B2BA3D /* TwitterTextEditor in Frameworks */,
 				1B9A86BB25B2CB570070D5E2 /* Alamofire in Frameworks */,
 				1B492A6B25C44C4B002AEAC3 /* SwiftUIRefresh in Frameworks */,
 				1B20B2E625AAC864007BB1F7 /* GrowingTextView in Frameworks */,
+				1B2CF44A25C9306A00B2BA3D /* Proton in Frameworks */,
 				1B20B2CA25A897FA007BB1F7 /* Atributika in Frameworks */,
 				1B20B2D125A89F3C007BB1F7 /* SwiftRichString in Frameworks */,
 				1B2FC41F25C1BD490087018C /* NSAttributedStringBuilder in Frameworks */,
@@ -267,6 +344,7 @@
 		1B20B29425A87463007BB1F7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1B2CF48525C99D7600B2BA3D /* EditorView */,
 				1B20B2DD25A98814007BB1F7 /* RichText.swift */,
 				1B9A862B25ADDA210070D5E2 /* htmlRender.swift */,
 				1B2FC41625C1BCF20087018C /* AttributedText.swift */,
@@ -310,9 +388,101 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		1B2CF40A25C86F8300B2BA3D /* NotesTextView */ = {
+			isa = PBXGroup;
+			children = (
+				1B2CF41225C86F9400B2BA3D /* NotesTextView */,
+				1B2CF41B25C86F9400B2BA3D /* TextStyleKeyboard */,
+				1B2CF40D25C86F9300B2BA3D /* AutoLayoutHelper */,
+				1B2CF40B25C86F9300B2BA3D /* Colors */,
+				1B2CF40F25C86F9400B2BA3D /* Fonts */,
+			);
+			path = NotesTextView;
+			sourceTree = "<group>";
+		};
+		1B2CF40B25C86F9300B2BA3D /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				1B2CF40C25C86F9300B2BA3D /* UIColor+Extension.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		1B2CF40D25C86F9300B2BA3D /* AutoLayoutHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1B2CF40E25C86F9300B2BA3D /* UIView+Layout.swift */,
+			);
+			path = AutoLayoutHelper;
+			sourceTree = "<group>";
+		};
+		1B2CF40F25C86F9400B2BA3D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1B2CF41025C86F9400B2BA3D /* NotesFontProvider.swift */,
+				1B2CF41125C86F9400B2BA3D /* UIFont+withBoldWithoutItalics.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1B2CF41225C86F9400B2BA3D /* NotesTextView */ = {
+			isa = PBXGroup;
+			children = (
+				1B2CF41325C86F9400B2BA3D /* NotesTextView+TextStyle.swift */,
+				1B2CF41425C86F9400B2BA3D /* NotesTextView+TextFormat.swift */,
+				1B2CF41525C86F9400B2BA3D /* NotesTextView.swift */,
+				1B2CF41625C86F9400B2BA3D /* NotesTextView+Indents.swift */,
+				1B2CF41725C86F9400B2BA3D /* NotesTextView+TextStyleKeyboardViewDelegate.swift */,
+				1B2CF41825C86F9400B2BA3D /* NotesTextView+KeyboardManagement.swift */,
+				1B2CF41925C86F9400B2BA3D /* NotesTextView+UndoManagement.swift */,
+				1B2CF41A25C86F9400B2BA3D /* NotesTextView+TextAlignment.swift */,
+			);
+			path = NotesTextView;
+			sourceTree = "<group>";
+		};
+		1B2CF41B25C86F9400B2BA3D /* TextStyleKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1B2CF41C25C86F9400B2BA3D /* TwoStateButton.swift */,
+				1B2CF41D25C86F9400B2BA3D /* ColorPickerView.swift */,
+				1B2CF41E25C86F9400B2BA3D /* TextStyleView.swift */,
+				1B2CF41F25C86F9400B2BA3D /* TransformedColor.swift */,
+				1B2CF42025C86F9400B2BA3D /* TextStyleKeyboardView.swift */,
+				1B2CF42125C86F9400B2BA3D /* ColorChoiceView.swift */,
+				1B2CF42225C86F9400B2BA3D /* OneStateButton.swift */,
+			);
+			path = TextStyleKeyboard;
+			sourceTree = "<group>";
+		};
+		1B2CF48525C99D7600B2BA3D /* EditorView */ = {
+			isa = PBXGroup;
+			children = (
+				1B2CF48625C99D8C00B2BA3D /* Commands */,
+				1B2CF44E25C9309300B2BA3D /* MemoEditorView.swift */,
+			);
+			path = EditorView;
+			sourceTree = "<group>";
+		};
+		1B2CF48625C99D8C00B2BA3D /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				1B2CF49D25C99EC400B2BA3D /* FontTraitToggleCommand.swift */,
+				1B2CF49625C99EAB00B2BA3D /* BoldCommand.swift */,
+				1B2CF49725C99EAB00B2BA3D /* ItalicsCommand.swift */,
+				1B2CF48725C99D8C00B2BA3D /* TextBlockCommand.swift */,
+				1B2CF48825C99D8C00B2BA3D /* PanelCommand.swift */,
+				1B2CF48925C99D8C00B2BA3D /* EncodeContentsCommand.swift */,
+				1B2CF48A25C99D8C00B2BA3D /* DummyCollabCommand.swift */,
+				1B2CF48B25C99D8C00B2BA3D /* ResetCommand.swift */,
+				1B2CF48C25C99D8C00B2BA3D /* ScrollCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
 		1B9A861D25AB2EA60070D5E2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1B2CF40A25C86F8300B2BA3D /* NotesTextView */,
 				1B9A863225AEC6B40070D5E2 /* DStack.swift */,
 				1B20B2B625A87E40007BB1F7 /* FileHelper.swift */,
 				1B20B2C125A881E0007BB1F7 /* Helpers.swift */,
@@ -396,6 +566,7 @@
 				1B20B24B25A81B02007BB1F7 /* Sources */,
 				1B20B24C25A81B02007BB1F7 /* Frameworks */,
 				1B20B24D25A81B02007BB1F7 /* Resources */,
+				1B2CF3BA25C854E600B2BA3D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -410,6 +581,8 @@
 				1B9A86BA25B2CB570070D5E2 /* Alamofire */,
 				1B2FC41E25C1BD490087018C /* NSAttributedStringBuilder */,
 				1B492A6A25C44C4B002AEAC3 /* SwiftUIRefresh */,
+				1B2CF3C225C8556000B2BA3D /* TwitterTextEditor */,
+				1B2CF44925C9306A00B2BA3D /* Proton */,
 			);
 			productName = "flomo (iOS)";
 			productReference = 1B20B24F25A81B02007BB1F7 /* flomo.app */;
@@ -510,6 +683,8 @@
 				1B9A86B925B2CB570070D5E2 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				1B2FC41D25C1BD490087018C /* XCRemoteSwiftPackageReference "NSAttributedStringBuilder" */,
 				1B492A6925C44C4B002AEAC3 /* XCRemoteSwiftPackageReference "SwiftUIRefresh" */,
+				1B2CF3C125C8556000B2BA3D /* XCRemoteSwiftPackageReference "TwitterTextEditor" */,
+				1B2CF44825C9306A00B2BA3D /* XCRemoteSwiftPackageReference "proton" */,
 			);
 			productRefGroup = 1B20B25025A81B02007BB1F7 /* Products */;
 			projectDirPath = "";
@@ -567,14 +742,24 @@
 			files = (
 				1B9A869F25B19F000070D5E2 /* LoadMemoRequest.swift in Sources */,
 				1B20B27325A81B03007BB1F7 /* ContentView.swift in Sources */,
+				1B2CF42F25C86F9400B2BA3D /* TwoStateButton.swift in Sources */,
 				1B20B2C225A881E0007BB1F7 /* Helpers.swift in Sources */,
 				1B9A867F25B19CFC0070D5E2 /* AppError.swift in Sources */,
 				1B2FC41725C1BCF20087018C /* AttributedText.swift in Sources */,
 				1B9A862C25ADDA210070D5E2 /* htmlRender.swift in Sources */,
+				1B2CF49125C99D8C00B2BA3D /* ResetCommand.swift in Sources */,
+				1B2CF49825C99EAB00B2BA3D /* BoldCommand.swift in Sources */,
 				1B9A866625B19CD70070D5E2 /* Store.swift in Sources */,
+				1B2CF43325C86F9400B2BA3D /* TextStyleKeyboardView.swift in Sources */,
 				1B9A868E25B19E320070D5E2 /* FileStorage.swift in Sources */,
 				1B9A86C525B2D7480070D5E2 /* NetworkAPI.swift in Sources */,
+				1B2CF42C25C86F9400B2BA3D /* NotesTextView+KeyboardManagement.swift in Sources */,
+				1B2CF42E25C86F9400B2BA3D /* NotesTextView+TextAlignment.swift in Sources */,
+				1B2CF42D25C86F9400B2BA3D /* NotesTextView+UndoManagement.swift in Sources */,
 				1B20B2A825A87633007BB1F7 /* MemoModel.swift in Sources */,
+				1B2CF49925C99EAB00B2BA3D /* ItalicsCommand.swift in Sources */,
+				1B2CF43025C86F9400B2BA3D /* ColorPickerView.swift in Sources */,
+				1B2CF49E25C99EC400B2BA3D /* FontTraitToggleCommand.swift in Sources */,
 				1B9A867125B19CE10070D5E2 /* AppState.swift in Sources */,
 				1B20B30225AB2A48007BB1F7 /* MemoList.swift in Sources */,
 				1B9A869525B19E7E0070D5E2 /* User.swift in Sources */,
@@ -582,18 +767,37 @@
 				1B20B2DE25A98814007BB1F7 /* RichText.swift in Sources */,
 				1B20B27125A81B03007BB1F7 /* flomoApp.swift in Sources */,
 				1B9A86A125B19F000070D5E2 /* LoginRequest.swift in Sources */,
+				1B2CF42425C86F9400B2BA3D /* UIView+Layout.swift in Sources */,
+				1B2CF43125C86F9400B2BA3D /* TextStyleView.swift in Sources */,
+				1B2CF42725C86F9400B2BA3D /* NotesTextView+TextStyle.swift in Sources */,
+				1B2CF43525C86F9400B2BA3D /* OneStateButton.swift in Sources */,
 				1B20B29625A87489007BB1F7 /* MemoRow.swift in Sources */,
 				1B9A865C25B19B200070D5E2 /* MemoRootView.swift in Sources */,
+				1B2CF42B25C86F9400B2BA3D /* NotesTextView+TextStyleKeyboardViewDelegate.swift in Sources */,
+				1B2CF42925C86F9400B2BA3D /* NotesTextView.swift in Sources */,
 				1B9A867825B19CF30070D5E2 /* AppAction.swift in Sources */,
+				1B2CF42625C86F9400B2BA3D /* UIFont+withBoldWithoutItalics.swift in Sources */,
 				1B9A86A325B19F000070D5E2 /* EmailCheckingRequest.swift in Sources */,
 				1B20B2B725A87E41007BB1F7 /* FileHelper.swift in Sources */,
+				1B2CF43425C86F9400B2BA3D /* ColorChoiceView.swift in Sources */,
+				1B2CF49025C99D8C00B2BA3D /* DummyCollabCommand.swift in Sources */,
+				1B2CF48D25C99D8C00B2BA3D /* TextBlockCommand.swift in Sources */,
+				1B2CF42825C86F9400B2BA3D /* NotesTextView+TextFormat.swift in Sources */,
+				1B2CF43225C86F9400B2BA3D /* TransformedColor.swift in Sources */,
 				1B9A86AE25B1CB050070D5E2 /* SettingView.swift in Sources */,
+				1B2CF42325C86F9400B2BA3D /* UIColor+Extension.swift in Sources */,
+				1B2CF42525C86F9400B2BA3D /* NotesFontProvider.swift in Sources */,
+				1B2CF44F25C9309300B2BA3D /* MemoEditorView.swift in Sources */,
+				1B2CF42A25C86F9400B2BA3D /* NotesTextView+Indents.swift in Sources */,
+				1B2CF49225C99D8C00B2BA3D /* ScrollCommand.swift in Sources */,
 				1B20B2F325AADED1007BB1F7 /* transformToAttributedSting.swift in Sources */,
 				1B9A864525B0270E0070D5E2 /* StringExtension.swift in Sources */,
+				1B2CF48E25C99D8C00B2BA3D /* PanelCommand.swift in Sources */,
 				1B9A86C325B2D7480070D5E2 /* NetworkManager.swift in Sources */,
 				1B2FC40C25C063450087018C /* NewMemoView.swift in Sources */,
 				1B9A86AC25B1CB050070D5E2 /* SettingRootView.swift in Sources */,
 				1B9A863325AEC6B40070D5E2 /* DStack.swift in Sources */,
+				1B2CF48F25C99D8C00B2BA3D /* EncodeContentsCommand.swift in Sources */,
 				1B9A868625B19D060070D5E2 /* AppCommand.swift in Sources */,
 				1B9A86D025B54B650070D5E2 /* FutureExt.swift in Sources */,
 			);
@@ -788,6 +992,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LH53235Z68;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -810,6 +1018,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LH53235Z68;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1045,6 +1257,22 @@
 				minimumVersion = 0.7.2;
 			};
 		};
+		1B2CF3C125C8556000B2BA3D /* XCRemoteSwiftPackageReference "TwitterTextEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twitter/TwitterTextEditor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		1B2CF44825C9306A00B2BA3D /* XCRemoteSwiftPackageReference "proton" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rajdeep/proton";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
 		1B2FC41D25C1BD490087018C /* XCRemoteSwiftPackageReference "NSAttributedStringBuilder" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ethanhuang13/NSAttributedStringBuilder";
@@ -1091,6 +1319,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1B20B2E425AAC863007BB1F7 /* XCRemoteSwiftPackageReference "GrowingTextView" */;
 			productName = GrowingTextView;
+		};
+		1B2CF3C225C8556000B2BA3D /* TwitterTextEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B2CF3C125C8556000B2BA3D /* XCRemoteSwiftPackageReference "TwitterTextEditor" */;
+			productName = TwitterTextEditor;
+		};
+		1B2CF44925C9306A00B2BA3D /* Proton */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B2CF44825C9306A00B2BA3D /* XCRemoteSwiftPackageReference "proton" */;
+			productName = Proton;
 		};
 		1B2FC41E25C1BD490087018C /* NSAttributedStringBuilder */ = {
 			isa = XCSwiftPackageProductDependency;

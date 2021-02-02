@@ -19,17 +19,18 @@ struct MemoRow: View {
                 .font(.subheadline)
                 .foregroundColor(.gray)
 //                .padding(.top, 15)
-//                .padding(.horizontal, 15)
-                .padding(.bottom, 5)
+                .padding(.horizontal, 5)
+//                .padding(.bottom, 0)
                 .lineLimit(0)
             
             // Use TextEditor from UIkit to render attribuitedText
-//            RichText(message: $memo.content)
+            RichText(message: $memo.content)
 //                .padding(.horizontal, 10)
+//                .frame(minWidth: 0, maxWidth: .infinity,alignment: .leading)
             
             // Use Text from swiftUI to render text.
-            htmlRender(message: memo.content)
-                    .frame(minWidth: 0, maxWidth: .infinity,alignment: .leading)
+//            htmlRender(message: memo.content)
+//                    .frame(minWidth: 0, maxWidth: .infinity,alignment: .leading)
 //                    .padding(.horizontal, 15)
 //                    .padding(.bottom, 15)
                     

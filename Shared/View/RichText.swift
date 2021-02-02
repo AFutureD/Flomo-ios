@@ -16,14 +16,10 @@ struct RichText: View {
     @State var desirHeight: CGFloat = 0.0
     
     var body: some View {
-        ScrollView{
-            TextView(
-                text: $message,
-                attributedText: .constant(nil)
-            )
-//            .frame(height: 500)
-//            Text($message.wrappedValue)
-        }
+        TextView(
+            text: $message,
+            attributedText: .constant(nil)
+        )
     }
 }
 

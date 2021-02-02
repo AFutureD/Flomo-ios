@@ -38,6 +38,15 @@
         }
       },
       {
+        "package": "Proton",
+        "repositoryURL": "https://github.com/rajdeep/proton",
+        "state": {
+          "branch": null,
+          "revision": "e9257e11ff2a708f6b6ea98a9d593ab3bef7ea1b",
+          "version": "0.5.0"
+        }
+      },
+      {
         "package": "SwiftRichString",
         "repositoryURL": "https://github.com/malcommac/SwiftRichString",
         "state": {
@@ -71,6 +80,15 @@
           "branch": null,
           "revision": "fa8fac7b5eb5c729983a8bef65f094b5e0d12014",
           "version": "0.0.3"
+        }
+      },
+      {
+        "package": "TwitterTextEditor",
+        "repositoryURL": "https://github.com/twitter/TwitterTextEditor",
+        "state": {
+          "branch": null,
+          "revision": "8aa914134c5b6aa46e862de63f239ec0e3b52a91",
+          "version": "1.0.0"
         }
       }
     ]
